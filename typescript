@@ -1,0 +1,540 @@
+Script started on Wed 04 Feb 2015 12:50:23 PM CST
+
+[kkadam@eric2 ms_hydro]$ 
+[kkadam@eric2 ms_hydro]$ exitmake clean install./configure -fortran=intel -mpi -DISABLESHARED -mpiinc=/usr/local/pacckages/mvapich2/1.6rc1/intel-11.1/include -mpilib=/usr/local/packages/mvapich2/1.6rc1/intel-111.1/lib -mpilibrary='-lmpich -lopa -lpthread -lrdmacm -libverbs -libumad -ldl -lrt -L/usr/locaal/ofed/lib64/librdmacm.so.1.0.0 -L/usr/local/ofed/lib64/librdmacm.so.1.0.0'[A[A[A[kkadam@eric2 ms_hydro]$ make clean install[K
+[K
+[K
+[K[A[A[A[kkadam@eric2 ms_hydro]$ make clean installexit[K[Kmake
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 main.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 main.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o main.o
+Looking for file: main.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 advect_frac.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 advect_frac.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o advect_frac.o
+Looking for file: advect_frac.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 advect_bc.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 advect_bc.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o advect_bc.o
+Looking for file: advect_bc.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 slope.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 slope.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o slope.o
+Looking for file: slope.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 flux.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 flux.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o flux.o
+Looking for file: flux.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 flux_frac.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 flux_frac.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o flux_frac.o
+Looking for file: flux_frac.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 source.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 source.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o source.o
+Looking for file: source.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 source_bc.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 source_bc.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o source_bc.o
+Looking for file: source_bc.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 make_source_temp.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 make_source_temp.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o make_source_temp.o
+Looking for file: make_source_temp.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 make_source_temp_bc.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 make_source_temp_bc.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o make_source_temp_bc.o
+Looking for file: make_source_temp_bc.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 vel.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 vel.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o vel.o
+Looking for file: vel.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 vel_bc.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 vel_bc.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o vel_bc.o
+Looking for file: vel_bc.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 stress.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 stress.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o stress.o
+Looking for file: stress.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 visc.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 visc.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o visc.o
+Looking for file: visc.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 visc_time.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 visc_time.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o visc_time.o
+Looking for file: visc_time.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 comm.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 comm.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o comm.o
+Looking for file: comm.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 delta.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 delta.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o delta.o
+Looking for file: delta.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 comm_dir.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 comm_dir.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o comm_dir.o
+Looking for file: comm_dir.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 drag.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 drag.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o drag.o
+Looking for file: drag.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 drag_bc.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 drag_bc.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o drag_bc.o
+Looking for file: drag_bc.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 save_state.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 save_state.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o save_state.o
+Looking for file: save_state.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 state.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 state.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o state.o
+Looking for file: state.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 potential_solver.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 potential_solver.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o potential_solver.o
+Looking for file: potential_solver.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 bessel.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 bessel.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o bessel.o
+Looking for file: bessel.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 helmadi.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 helmadi.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o helmadi.o
+Looking for file: helmadi.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 swap_r_z.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 swap_r_z.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o swap_r_z.o
+Looking for file: swap_r_z.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 swap_z_r.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 swap_z_r.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o swap_z_r.o
+Looking for file: swap_z_r.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 tridagr.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 tridagr.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o tridagr.o
+Looking for file: tridagr.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 tridagz.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 tridagz.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o tridagz.o
+Looking for file: tridagz.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 realft.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 realft.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o realft.o
+Looking for file: realft.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 comm_r_sweep.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 comm_r_sweep.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o comm_r_sweep.o
+Looking for file: comm_r_sweep.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 comm_z_sweep.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 comm_z_sweep.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o comm_z_sweep.o
+Looking for file: comm_z_sweep.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 swap_phi_r.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 swap_phi_r.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o swap_phi_r.o
+Looking for file: swap_phi_r.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 swap_r_phi.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 swap_r_phi.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o swap_r_phi.o
+Looking for file: swap_r_phi.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 output_files.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 output_files.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o output_files.o
+Looking for file: output_files.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 output_kernel_pio.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 output_kernel_pio.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o output_kernel_pio.o
+Looking for file: output_kernel_pio.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 dodiag.1.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 dodiag.1.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o dodiag.1.o
+Looking for file: dodiag.1.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 diag_find_rhomax.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 diag_find_rhomax.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o diag_find_rhomax.o
+Looking for file: diag_find_rhomax.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 diag_make_mask.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 diag_make_mask.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o diag_make_mask.o
+Looking for file: diag_make_mask.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 diag_find_lpoints.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 diag_find_lpoints.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o diag_find_lpoints.o
+Looking for file: diag_find_lpoints.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 diag_momments.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 diag_momments.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o diag_momments.o
+Looking for file: diag_momments.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 diag_spins.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 diag_spins.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o diag_spins.o
+Looking for file: diag_spins.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 diag_gwave.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 diag_gwave.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o diag_gwave.o
+Looking for file: diag_gwave.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 diag_write.1.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 diag_write.1.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o diag_write.1.o
+Looking for file: diag_write.1.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 dsummer.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 dsummer.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o dsummer.o
+Looking for file: dsummer.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 potsetup.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 potsetup.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o potsetup.o
+Looking for file: potsetup.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 tm.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 tm.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o tm.o
+Looking for file: tm.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 sm.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 sm.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o sm.o
+Looking for file: sm.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 bm.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 bm.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o bm.o
+Looking for file: bm.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 elle.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 elle.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o elle.o
+Looking for file: elle.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 ellf.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 ellf.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o ellf.o
+Looking for file: ellf.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 gammln.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 gammln.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o gammln.o
+Looking for file: gammln.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 rd.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 rd.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o rd.o
+Looking for file: rd.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 rf.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 rf.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o rf.o
+Looking for file: rf.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 setup_frac.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 setup_frac.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o setup_frac.o
+Looking for file: setup_frac.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 initialize_frac.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 initialize_frac.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o initialize_frac.o
+Looking for file: initialize_frac.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 ritecont_frac.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 ritecont_frac.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o ritecont_frac.o
+Looking for file: ritecont_frac.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 scfin_frac.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 scfin_frac.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o scfin_frac.o
+Looking for file: scfin_frac.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 debugin.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 debugin.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o debugin.o
+Looking for file: debugin.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 calc_com_coords.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 calc_com_coords.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o calc_com_coords.o
+Looking for file: calc_com_coords.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 com_vel_accn.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 com_vel_accn.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o com_vel_accn.o
+Looking for file: com_vel_accn.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -c -O0 -r8 ritecont_frac_new.F90
+Debug: Using compiler-based instrumentation
+
+
+Debug: Compiling with Instrumented Code
+Executing> ifort -c -O0 -r8 ritecont_frac_new.F90 -g -I/home/kkadam/opt/tau-2.24/include -I/usr/local/packages/mvapich2/1.6rc1/intel-11.1/include -g -finstrument-functions -o ritecont_frac_new.o
+Looking for file: ritecont_frac_new.o
+
+/home/kkadam/opt/tau-2.24/x86_64/bin/tau_f90.sh -O0 -r8 -o hydro main.o advect_frac.o advect_bc.o slope.o flux.o flux_frac.o source.o source_bc.o make_source_temp.o make_source_temp_bc.o vel.o vel_bc.o stress.o visc.o visc_time.o comm.o delta.o comm_dir.o drag.o drag_bc.o save_state.o state.o potential_solver.o bessel.o helmadi.o swap_r_z.o swap_z_r.o tridagr.o tridagz.o realft.o comm_r_sweep.o comm_z_sweep.o swap_phi_r.o swap_r_phi.o output_files.o output_kernel_pio.o dodiag.1.o diag_find_rhomax.o diag_make_mask.o diag_find_lpoints.o diag_momments.o diag_spins.o diag_gwave.o diag_write.1.o dsummer.o potsetup.o tm.o sm.o bm.o elle.o ellf.o gammln.o rd.o rf.o setup_frac.o initialize_frac.o ritecont_frac.o scfin_frac.o debugin.o calc_com_coords.o com_vel_accn.o ritecont_frac_new.o 
+Debug: Using compiler-based instrumentation
+Debug: Moving these libraries to the end of the link line:
+
+
+Debug: Linking with TAU Options
+Executing> ifort -O0 -r8 -o hydro main.o advect_frac.o advect_bc.o slope.o flux.o flux_frac.o source.o source_bc.o make_source_temp.o make_source_temp_bc.o vel.o vel_bc.o stress.o visc.o visc_time.o comm.o delta.o comm_dir.o drag.o drag_bc.o save_state.o state.o potential_solver.o bessel.o helmadi.o swap_r_z.o swap_z_r.o tridagr.o tridagz.o realft.o comm_r_sweep.o comm_z_sweep.o swap_phi_r.o swap_r_phi.o output_files.o output_kernel_pio.o dodiag.1.o diag_find_rhomax.o diag_make_mask.o diag_find_lpoints.o diag_momments.o diag_spins.o diag_gwave.o diag_write.1.o dsummer.o potsetup.o tm.o sm.o bm.o elle.o ellf.o gammln.o rd.o rf.o setup_frac.o initialize_frac.o ritecont_frac.o scfin_frac.o debugin.o calc_com_coords.o com_vel_accn.o ritecont_frac_new.o -L/usr/local/packages/mvapich2/1.6rc1/intel-11.1/lib -L/home/kkadam/opt/tau-2.24/x86_64/lib -lTauMpi-mpi -lpthread -lrt -lmpichcxx -lmpich -lopa -lpthread -lrdmacm -libverbs -libumad -ldl -lrt -L/usr/local/ofed/lib64/librdmacm.so.1.0.0 -L/usr/local/ofed/lib64/librdmacm.so.1.0.0 -lrt -Wl,-rpath,/usr/local/packages/mvapich2/1.6rc1/intel-11.1/lib -L/home/kkadam/opt/tau-2.24/x86_64/lib -ltau-mpi -lbfd -liberty -Wl,--export-dynamic -lrt -L/usr/lib/gcc/x86_64-redhat-linux/3.4.6/ -lstdc++ -lgcc_s -L/home/kkadam/opt/tau-2.24/x86_64/lib/static-mpi -g
+ld: cannot find -lrdmacm
+Error: Tried looking for file: hydro
+Error: Failed to link with TAU options
+Error: Command(Executable) is -- ifort
+Error: Full Command attempted is -- ifort    -O0  -r8  -o  hydro  main.o  advect_frac.o  advect_bc.o  slope.o  flux.o  flux_frac.o  source.o  source_bc.o  make_source_temp.o  make_source_temp_bc.o  vel.o  vel_bc.o  stress.o  visc.o  visc_time.o  comm.o  delta.o  comm_dir.o  drag.o  drag_bc.o  save_state.o  state.o  potential_solver.o  bessel.o  helmadi.o  swap_r_z.o  swap_z_r.o  tridagr.o  tridagz.o  realft.o  comm_r_sweep.o  comm_z_sweep.o  swap_phi_r.o  swap_r_phi.o  output_files.o  output_kernel_pio.o  dodiag.1.o  diag_find_rhomax.o  diag_make_mask.o  diag_find_lpoints.o  diag_momments.o  diag_spins.o  diag_gwave.o  diag_write.1.o  dsummer.o  potsetup.o  tm.o  sm.o  bm.o  elle.o  ellf.o  gammln.o  rd.o  rf.o  setup_frac.o  initialize_frac.o  ritecont_frac.o  scfin_frac.o  debugin.o  calc_com_coords.o  com_vel_accn.o  ritecont_frac_new.o   -L/usr/local/packages/mvapich2/1.6rc1/intel-11.1/lib -L/home/kkadam/opt/tau-2.24/x86_64/lib -lTauMpi-mpi -lpthread -lrt -lmpichcxx -lmpich -lopa -lpthread -lrdmacm -libverbs -libumad -ldl -lrt -L/usr/local/ofed/lib64/librdmacm.so.1.0.0 -L/usr/local/ofed/lib64/librdmacm.so.1.0.0 -lrt -Wl,-rpath,/usr/local/packages/mvapich2/1.6rc1/intel-11.1/lib    -L/home/kkadam/opt/tau-2.24/x86_64/lib -ltau-mpi              -lbfd -liberty       -Wl,--export-dynamic  -lrt         -L/usr/lib/gcc/x86_64-redhat-linux/3.4.6/   -lstdc++ -lgcc_s    -L/home/kkadam/opt/tau-2.24/x86_64/lib/static-mpi     -g  
+Error: Reverting to a Regular Make
+ 
+
+Debug: PDT failed, switching to compiler-based instrumentation
+
+Debug: Using compiler-based instrumentation
+Debug: Moving these libraries to the end of the link line:
+
+
+Debug: Linking with TAU Options
+Executing> ifort -O0 -r8 -o hydro main.o advect_frac.o advect_bc.o slope.o flux.o flux_frac.o source.o source_bc.o make_source_temp.o make_source_temp_bc.o vel.o vel_bc.o stress.o visc.o visc_time.o comm.o delta.o comm_dir.o drag.o drag_bc.o save_state.o state.o potential_solver.o bessel.o helmadi.o swap_r_z.o swap_z_r.o tridagr.o tridagz.o realft.o comm_r_sweep.o comm_z_sweep.o swap_phi_r.o swap_r_phi.o output_files.o output_kernel_pio.o dodiag.1.o diag_find_rhomax.o diag_make_mask.o diag_find_lpoints.o diag_momments.o diag_spins.o diag_gwave.o diag_write.1.o dsummer.o potsetup.o tm.o sm.o bm.o elle.o ellf.o gammln.o rd.o rf.o setup_frac.o initialize_frac.o ritecont_frac.o scfin_frac.o debugin.o calc_com_coords.o com_vel_accn.o ritecont_frac_new.o -L/usr/local/packages/mvapich2/1.6rc1/intel-11.1/lib -L/home/kkadam/opt/tau-2.24/x86_64/lib -lTauMpi-mpi -lpthread -lrt -lmpichcxx -lmpich -lopa -lpthread -lrdmacm -libverbs -libumad -ldl -lrt -L/usr/local/ofed/lib64/librdmacm.so.1.0.0 -L/usr/local/ofed/lib64/librdmacm.so.1.0.0 -lrt -Wl,-rpath,/usr/local/packages/mvapich2/1.6rc1/intel-11.1/lib -L/home/kkadam/opt/tau-2.24/x86_64/lib -ltau-mpi -lbfd -liberty -Wl,--export-dynamic -lrt -L/usr/lib/gcc/x86_64-redhat-linux/3.4.6/ -lstdc++ -lgcc_s -L/home/kkadam/opt/tau-2.24/x86_64/lib/static-mpi -g
+ld: cannot find -lrdmacm
+Error: Tried looking for file: hydro
+Error: Failed to link with TAU options
+Error: Command(Executable) is -- ifort
+Error: Full Command attempted is -- ifort        -O0    -r8    -o    hydro    main.o    advect_frac.o    advect_bc.o    slope.o    flux.o    flux_frac.o    source.o    source_bc.o    make_source_temp.o    make_source_temp_bc.o    vel.o    vel_bc.o    stress.o    visc.o    visc_time.o    comm.o    delta.o    comm_dir.o    drag.o    drag_bc.o    save_state.o    state.o    potential_solver.o    bessel.o    helmadi.o    swap_r_z.o    swap_z_r.o    tridagr.o    tridagz.o    realft.o    comm_r_sweep.o    comm_z_sweep.o    swap_phi_r.o    swap_r_phi.o    output_files.o    output_kernel_pio.o    dodiag.1.o    diag_find_rhomax.o    diag_make_mask.o    diag_find_lpoints.o    diag_momments.o    diag_spins.o    diag_gwave.o    diag_write.1.o    dsummer.o    potsetup.o    tm.o    sm.o    bm.o    elle.o    ellf.o    gammln.o    rd.o    rf.o    setup_frac.o    initialize_frac.o    ritecont_frac.o    scfin_frac.o    debugin.o    calc_com_coords.o    com_vel_accn.o    ritecont_frac_new.o   -L/usr/local/packages/mvapich2/1.6rc1/intel-11.1/lib -L/home/kkadam/opt/tau-2.24/x86_64/lib -lTauMpi-mpi -lpthread -lrt -lmpichcxx -lmpich -lopa -lpthread -lrdmacm -libverbs -libumad -ldl -lrt -L/usr/local/ofed/lib64/librdmacm.so.1.0.0 -L/usr/local/ofed/lib64/librdmacm.so.1.0.0 -lrt -Wl,-rpath,/usr/local/packages/mvapich2/1.6rc1/intel-11.1/lib    -L/home/kkadam/opt/tau-2.24/x86_64/lib -ltau-mpi              -lbfd -liberty       -Wl,--export-dynamic  -lrt         -L/usr/lib/gcc/x86_64-redhat-linux/3.4.6/   -lstdc++ -lgcc_s    -L/home/kkadam/opt/tau-2.24/x86_64/lib/static-mpi     -g    
+Error: Reverting to a Regular Make
+ 
+
+make[1]: *** [all] Error 1
+make: *** [hydro] Error 1
+[kkadam@eric2 ms_hydro]$ exit
+exit
+
+Script done on Wed 04 Feb 2015 12:51:44 PM CST
