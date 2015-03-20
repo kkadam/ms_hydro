@@ -1,0 +1,15 @@
+#################### code: ms_hydro ###########################
+######## short for multi-species hydrodynamics code ###########
+###############################################################
+
+This code evolves a pair of polytropic stars with a single 
+polytropic index. One can specify different "species" a fluid 
+to track. 
+
+
+
+
+
+
+
+
